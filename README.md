@@ -104,7 +104,7 @@ Kemungkinan-kemungkinan yg dapat dilakukan yaitu:
 - memasang csv reader untuk membaca file csv<br/>
  ![fileread](https://github.com/wisnugroho28/BigData_Tugas1/blob/master/ssimg/fileread.png "fileread")<br/>
 - melakukan konfigurasi , menentukan path file dimana csv disimpan<br/>
- ![filereadset](https://github.com/wisnugroho28/BigData_Tugas1/blob/master/ssimg/filereadset.png "filereadset")<br/>
+ ![filereadfind](https://github.com/wisnugroho28/BigData_Tugas1/blob/master/ssimg/filereadfind.png "filereadfind")<br/>
 
 
 ### Proses Modeling
@@ -147,16 +147,16 @@ Kemungkinan-kemungkinan yg dapat dilakukan yaitu:
 - data akan disimpan ke database menggunakan db writer<br/>
 ![dbwrite](https://github.com/wisnugroho28/BigData_Tugas1/blob/master/ssimg/dbwrite.png "dbwrite")<br/>
 
-- memilih konfigurasi lain nya, seperti nama dan db yang dituju
+- memilih konfigurasi lain nya, seperti nama dan db yang dituju<br/>
 ![dbwritefinale](https://github.com/wisnugroho28/BigData_Tugas1/blob/master/ssimg/dbwritefinale.png "dbwritefinale")<br/>
 
-- berhasil tersimpan
+- berhasil tersimpan<br/>
 ![phpadmfinale](https://github.com/wisnugroho28/BigData_Tugas1/blob/master/ssimg/phpadmfinale.png "phpadmfinale")<br/>
 
  ### gambar knime secara lengkap
--Preparation Phase
+-Preparation Phase<br/>
 ![prep](https://github.com/wisnugroho28/BigData_Tugas1/blob/master/ssimg/prep.png "prep")<br/>
--Modelling Phase
+-Modelling Phase<br/>
 ![schemefinale](https://github.com/wisnugroho28/BigData_Tugas1/blob/master/ssimg/schemefinale.png "schemefinale")<br/>
 
 
