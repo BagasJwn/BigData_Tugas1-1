@@ -51,22 +51,36 @@ Kemungkinan-kemungkinan yg dapat dilakukan yaitu:
 # Data Preparation
 - Karena hanya terdiri dari 1 file csv, saya memisahkan isi data dengan node column splitter yang ada di knime.
 - Pertama, saya menggunakan node file reader yang tersedia di knime<br/>
+![alt text](https://https://github.com/wisnugroho28/BigData_Tugas1/tree/master/ssimg/fileread.png "fileread")<br/>
 
 - Kedua, klik kanan lalu buka settings dan "browse file .csv yang ingin digunakan, lalu klik ok<br/>
+![alt text](https://https://github.com/wisnugroho28/BigData_Tugas1/tree/master/ssimg/filereadfind.png "filereadfind")<br/>
 
 - Ketiga, Drag node column splitter kedalam workflow, lalu hubungkan dengan node file reader<br/>
+![alt text](https://https://github.com/wisnugroho28/BigData_Tugas1/tree/master/ssimg/colsplit.png "colsplit")<br/>
 
 - Keempat, klik kanan pada node column splitter lalu buka settings.<br/>
-  -2 hasil splitter
+![alt text](https://https://github.com/wisnugroho28/BigData_Tugas1/tree/master/ssimg/colsplitset.png "colsplitset")<br/>
+  -2 hasil splitter<br/>
+      ![alt text](https://https://github.com/wisnugroho28/BigData_Tugas1/tree/master/ssimg/colsplit1.png "colsplit1")<br/>    
+      ![alt text](https://https://github.com/wisnugroho28/BigData_Tugas1/tree/master/ssimg/colsplit2.png "colsplit2")<br/>
  
--Kelima, salah satu bagian data di database, dan satu bagian lagi di file csv dengan cara:<br/>
+-Kelima, simpan salah satu bagian data di database, dan satu bagian lagi di file csv dengan cara:<br/>
  -Database:
-  -Gunakan MySQL Connector lalu hubungkan dengan database yang ingin dipakai<br/>
+  -Gunakan MySQL Connector lalu hubungkan dan setting dengan database yang ingin dipakai<br/>
+    ![alt text](https://https://github.com/wisnugroho28/BigData_Tugas1/tree/master/ssimg/sqlconn.png "sqlconn")<br/>
+    ![alt text](https://https://github.com/wisnugroho28/BigData_Tugas1/tree/master/ssimg/sqlconnset.png "sqlconnset")<br/>
   -Ambil node DB Writer, lalu hubungkan dengan MySQL Connector dan node Column splitter<br/>
+    ![alt text](https://https://github.com/wisnugroho28/BigData_Tugas1/tree/master/ssimg/dbwrite.png "dbwrite")<br/>
   -Konfigurasi node DB Writer lalu klik ok <br/>
-  -Tabel baru sudah ada di phpmyadmin
+    ![alt text](https://https://github.com/wisnugroho28/BigData_Tugas1/tree/master/ssimg/dbwriteset.png "dbwriteset")<br/>
+  -Tabel baru sudah ada di phpmyadmin<br/>
+    ![alt text](https://https://github.com/wisnugroho28/BigData_Tugas1/tree/master/ssimg/phpadmin.png "phpadmin")<br/>
  -CSV:
-  -Gunakan node CSV Writer, lalu klik kanan untuk melakukan konfigurasi<br/>
+  -Gunakan node CSV Writer<br/>
+    ![alt text](https://https://github.com/wisnugroho28/BigData_Tugas1/tree/master/ssimg/csvwrite.png "csvwrite")<br/>
+  -lalu klik kanan untuk melakukan konfigurasi<br/>
+    ![alt text](https://https://github.com/wisnugroho28/BigData_Tugas1/tree/master/ssimg/csvwriteset.png "csvwriteset")<br/>
   -Pilih output location lalu klik ok, lalu execute<br/>
 
 
@@ -74,13 +88,11 @@ Kemungkinan-kemungkinan yg dapat dilakukan yaitu:
 ### Proses membaca data dari dua sumber yang berbeda
 #### Proses membaca dari MYSQL
 - yang pertama membaca data dari mysql, dengan menggunakan mysql connector nodes dari knime<br/>
-
-
+ ![alt text](https://https://github.com/wisnugroho28/BigData_Tugas1/tree/master/ssimg/sqlconn.png "sqlconn")<br/>
 - data di mysql seperti dibawah<br/>
-
-
+ ![alt text](https://https://github.com/wisnugroho28/BigData_Tugas1/tree/master/ssimg/phpadmin.png "phpadmin")<br/>
 - melakukan configurasi disesuaikan dengan mysql yang ada di phpmyadmin, mulai dari database, port dari localhost dan username.<br/>
-
+ ![alt text](https://https://github.com/wisnugroho28/BigData_Tugas1/tree/master/ssimg/sqlconnset.png "sqlconnset")<br/>
 - db table selector untuk mengambil Koneksi DB sebagai input dan memungkinkan untuk memilih tabel atau tampilan dari dalam database yang terhubung.<br/>
 
 
